@@ -1,0 +1,1791 @@
+Unable to determine clock rate from sysctl: hw.cpufrequency: No such file or directory
+This does not affect benchmark measurements, only the metadata output.
+***WARNING*** Failed to set thread affinity. Estimated CPU frequency may be incorrect.
+2026-10-12T11:23:31+05:30
+Running ./build/matching_bench
+Run on (8 X 24 MHz CPU s)
+CPU Caches:
+  L1 Data 64 KiB
+  L1 Instruction 128 KiB
+  L2 Unified 4096 KiB (x8)
+Load Average: 2.92, 2.90, 3.02
+----------------------------------------------------------------------------------------------
+Benchmark                                    Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------
+BM_MatchingEngine_Throughput/1000      3002538 ns      3001644 ns          233 items_per_second=333.151k/s
+BM_MatchingEngine_Throughput/10000     4900276 ns      4885007 ns          147 items_per_second=2.04708M/s
+BM_MatchingEngine_Throughput/100000   22047362 ns     21891281 ns           32 items_per_second=4.56803M/s
+BM_MatchingEngine_SingleOrder              175 ns          175 ns      3940576
+BM_MatchingEngine_Cancel                 10474 ns        10469 ns        67059 items_per_second=477.607M/s
+BM_SPSC_Push                               331 ns          325 ns      2147832 items_per_second=3.07651G/s
+BM_SPSC_Pop                              26651 ns        26648 ns        22232 items_per_second=37.5267M/s
+BM_SPSC_Concurrent                      417247 ns        22746 ns        10000 items_per_second=439.638M/s
+BM_OrderPool_AllocDealloc                0.000 ns        0.000 ns   1000000000 items_per_second=333.333P/s
+BM_OrderPool_FillAndDrain               254831 ns       253562 ns         2748 items_per_second=394.381M/s
+BM_PriceLevelList_Operations               335 ns          335 ns      2102071 items_per_second=596.854M/s
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.9 ns
+  Min:     83.0 ns
+  Max:     17542.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  5988.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    194.3 ns
+  Min:     83.0 ns
+  Max:     9167.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     499.9 ns
+  p99.9:   749.4 ns
+  p99.99:  9068.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.3 ns
+  Min:     83.0 ns
+  Max:     5042.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  4957.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.6 ns
+  Min:     83.0 ns
+  Max:     20000.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  16145.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    176.9 ns
+  Min:     83.0 ns
+  Max:     10250.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   749.4 ns
+  p99.99:  3784.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.7 ns
+  Min:     83.0 ns
+  Max:     15417.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   666.0 ns
+  p99.99:  13918.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.9 ns
+  Min:     83.0 ns
+  Max:     13208.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  13054.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.8 ns
+  Min:     83.0 ns
+  Max:     3959.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  2700.9 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    179.1 ns
+  Min:     83.0 ns
+  Max:     5875.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   666.0 ns
+  p99.99:  3573.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.9 ns
+  Min:     83.0 ns
+  Max:     11458.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  4825.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.5 ns
+  Min:     83.0 ns
+  Max:     3917.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     415.3 ns
+  p99.9:   499.9 ns
+  p99.99:  2243.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.8 ns
+  Min:     83.0 ns
+  Max:     15125.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  5828.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.9 ns
+  Min:     83.0 ns
+  Max:     12583.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  11406.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.4 ns
+  Min:     83.0 ns
+  Max:     3709.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  2576.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.3 ns
+  Min:     83.0 ns
+  Max:     8250.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  4907.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.6 ns
+  Min:     83.0 ns
+  Max:     3791.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2161.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.6 ns
+  Min:     83.0 ns
+  Max:     7333.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3823.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    180.7 ns
+  Min:     83.0 ns
+  Max:     13042.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  11329.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.6 ns
+  Min:     83.0 ns
+  Max:     4125.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2367.9 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.8 ns
+  Min:     83.0 ns
+  Max:     3875.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     415.3 ns
+  p99.9:   499.9 ns
+  p99.99:  2541.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    192.5 ns
+  Min:     83.0 ns
+  Max:     31625.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  18984.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.4 ns
+  Min:     83.0 ns
+  Max:     4000.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   457.9 ns
+  p99.99:  2576.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.5 ns
+  Min:     83.0 ns
+  Max:     28458.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3862.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    183.5 ns
+  Min:     83.0 ns
+  Max:     12250.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   624.6 ns
+  p99.99:  9603.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.6 ns
+  Min:     83.0 ns
+  Max:     40625.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3746.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.9 ns
+  Min:     42.0 ns
+  Max:     18750.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  4957.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.4 ns
+  Min:     83.0 ns
+  Max:     3667.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  1914.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    179.6 ns
+  Min:     83.0 ns
+  Max:     18000.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   666.0 ns
+  p99.99:  17986.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.0 ns
+  Min:     83.0 ns
+  Max:     22291.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3746.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    178.4 ns
+  Min:     83.0 ns
+  Max:     19042.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  10662.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    189.4 ns
+  Min:     83.0 ns
+  Max:     29917.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   749.4 ns
+  p99.99:  17448.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.7 ns
+  Min:     83.0 ns
+  Max:     18208.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  4571.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.9 ns
+  Min:     83.0 ns
+  Max:     22083.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  12749.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    188.2 ns
+  Min:     83.0 ns
+  Max:     9334.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  5110.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.3 ns
+  Min:     83.0 ns
+  Max:     3708.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2457.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.7 ns
+  Min:     83.0 ns
+  Max:     18042.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  16531.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.6 ns
+  Min:     83.0 ns
+  Max:     26584.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3659.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.4 ns
+  Min:     83.0 ns
+  Max:     4583.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  2998.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.6 ns
+  Min:     83.0 ns
+  Max:     19084.0 ns
+  p50:     124.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  4035.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.0 ns
+  Min:     83.0 ns
+  Max:     3833.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2083.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    185.9 ns
+  Min:     83.0 ns
+  Max:     21500.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  12536.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.4 ns
+  Min:     83.0 ns
+  Max:     3541.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2243.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.3 ns
+  Min:     83.0 ns
+  Max:     16250.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  11639.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    195.0 ns
+  Min:     83.0 ns
+  Max:     20500.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   832.0 ns
+  p99.99:  17865.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.8 ns
+  Min:     83.0 ns
+  Max:     19875.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  5041.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.6 ns
+  Min:     83.0 ns
+  Max:     13625.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  7738.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.6 ns
+  Min:     83.0 ns
+  Max:     7667.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  3659.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.2 ns
+  Min:     83.0 ns
+  Max:     12917.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  3862.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.4 ns
+  Min:     83.0 ns
+  Max:     3792.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   457.9 ns
+  p99.99:  2118.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.0 ns
+  Min:     83.0 ns
+  Max:     3625.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  1953.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    182.4 ns
+  Min:     83.0 ns
+  Max:     18542.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   707.6 ns
+  p99.99:  18108.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.9 ns
+  Min:     83.0 ns
+  Max:     21083.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3537.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.7 ns
+  Min:     83.0 ns
+  Max:     23708.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  15715.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    185.7 ns
+  Min:     83.0 ns
+  Max:     5583.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  5110.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.9 ns
+  Min:     83.0 ns
+  Max:     4791.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3374.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    184.8 ns
+  Min:     83.0 ns
+  Max:     19417.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   1039.6 ns
+  p99.99:  16255.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    185.5 ns
+  Min:     83.0 ns
+  Max:     8792.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   624.6 ns
+  p99.99:  3914.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.4 ns
+  Min:     83.0 ns
+  Max:     15833.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  13456.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.3 ns
+  Min:     83.0 ns
+  Max:     13625.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  9037.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.0 ns
+  Min:     83.0 ns
+  Max:     3625.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   457.9 ns
+  p99.99:  1914.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.7 ns
+  Min:     83.0 ns
+  Max:     10792.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3784.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.2 ns
+  Min:     83.0 ns
+  Max:     3709.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2041.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.9 ns
+  Min:     83.0 ns
+  Max:     3625.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  2083.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    181.3 ns
+  Min:     83.0 ns
+  Max:     18625.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  17331.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.7 ns
+  Min:     83.0 ns
+  Max:     24583.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3537.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.0 ns
+  Min:     83.0 ns
+  Max:     10833.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3823.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    192.8 ns
+  Min:     83.0 ns
+  Max:     17875.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   749.4 ns
+  p99.99:  17331.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.9 ns
+  Min:     83.0 ns
+  Max:     3667.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2161.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    179.9 ns
+  Min:     83.0 ns
+  Max:     17791.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  17566.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    187.2 ns
+  Min:     83.0 ns
+  Max:     9042.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  8916.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.8 ns
+  Min:     83.0 ns
+  Max:     4292.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3039.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    176.2 ns
+  Min:     83.0 ns
+  Max:     21542.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  18230.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.2 ns
+  Min:     83.0 ns
+  Max:     4000.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2161.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.2 ns
+  Min:     83.0 ns
+  Max:     5833.0 ns
+  p50:     165.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   666.0 ns
+  p99.99:  3573.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.3 ns
+  Min:     83.0 ns
+  Max:     24500.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  4665.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.3 ns
+  Min:     83.0 ns
+  Max:     4417.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2784.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    182.6 ns
+  Min:     83.0 ns
+  Max:     18916.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  7481.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    178.2 ns
+  Min:     83.0 ns
+  Max:     24625.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  3659.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    183.6 ns
+  Min:     83.0 ns
+  Max:     21541.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   749.4 ns
+  p99.99:  17805.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    191.1 ns
+  Min:     83.0 ns
+  Max:     18125.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   749.4 ns
+  p99.99:  13187.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.6 ns
+  Min:     42.0 ns
+  Max:     5083.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3122.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.3 ns
+  Min:     83.0 ns
+  Max:     15833.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  5110.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.4 ns
+  Min:     83.0 ns
+  Max:     3834.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2576.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.3 ns
+  Min:     83.0 ns
+  Max:     28083.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  4287.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.0 ns
+  Min:     42.0 ns
+  Max:     3791.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3573.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    179.5 ns
+  Min:     83.0 ns
+  Max:     4541.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  2118.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    185.0 ns
+  Min:     83.0 ns
+  Max:     4000.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  3622.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.5 ns
+  Min:     83.0 ns
+  Max:     17583.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  3784.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.0 ns
+  Min:     83.0 ns
+  Max:     17791.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  16365.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    185.2 ns
+  Min:     83.0 ns
+  Max:     6125.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  4360.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.5 ns
+  Min:     83.0 ns
+  Max:     22375.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  4696.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    185.2 ns
+  Min:     83.0 ns
+  Max:     26458.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   707.6 ns
+  p99.99:  20515.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    186.0 ns
+  Min:     83.0 ns
+  Max:     9959.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  5947.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.1 ns
+  Min:     83.0 ns
+  Max:     3625.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  2083.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    178.7 ns
+  Min:     83.0 ns
+  Max:     21541.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   666.0 ns
+  p99.99:  20864.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.3 ns
+  Min:     83.0 ns
+  Max:     3708.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2041.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.8 ns
+  Min:     83.0 ns
+  Max:     13334.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  3573.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.2 ns
+  Min:     83.0 ns
+  Max:     3500.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  1869.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.5 ns
+  Min:     83.0 ns
+  Max:     5292.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3573.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    184.3 ns
+  Min:     42.0 ns
+  Max:     20916.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  11215.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.8 ns
+  Min:     83.0 ns
+  Max:     16208.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3622.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    178.0 ns
+  Min:     83.0 ns
+  Max:     12291.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  9766.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    191.5 ns
+  Min:     83.0 ns
+  Max:     13208.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  11797.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.2 ns
+  Min:     83.0 ns
+  Max:     3708.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2416.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    180.8 ns
+  Min:     83.0 ns
+  Max:     24667.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  17507.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    180.1 ns
+  Min:     83.0 ns
+  Max:     9541.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  3914.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    171.6 ns
+  Min:     42.0 ns
+  Max:     4791.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2870.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.9 ns
+  Min:     42.0 ns
+  Max:     25042.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  21947.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.6 ns
+  Min:     83.0 ns
+  Max:     3667.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2118.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    179.9 ns
+  Min:     83.0 ns
+  Max:     12250.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  6110.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.4 ns
+  Min:     83.0 ns
+  Max:     3625.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2205.9 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    178.9 ns
+  Min:     83.0 ns
+  Max:     16834.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  13685.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    183.8 ns
+  Min:     41.0 ns
+  Max:     18084.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  12792.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.5 ns
+  Min:     83.0 ns
+  Max:     18708.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3573.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.5 ns
+  Min:     83.0 ns
+  Max:     15042.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  12285.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    192.9 ns
+  Min:     83.0 ns
+  Max:     25208.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  17448.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.6 ns
+  Min:     83.0 ns
+  Max:     3708.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2083.0 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.6 ns
+  Min:     83.0 ns
+  Max:     16542.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  4244.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    183.2 ns
+  Min:     83.0 ns
+  Max:     9042.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   666.0 ns
+  p99.99:  3784.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.8 ns
+  Min:     42.0 ns
+  Max:     6208.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3696.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    179.0 ns
+  Min:     83.0 ns
+  Max:     17042.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  15983.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.3 ns
+  Min:     83.0 ns
+  Max:     3875.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  2118.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    176.8 ns
+  Min:     83.0 ns
+  Max:     3834.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  2831.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.7 ns
+  Min:     83.0 ns
+  Max:     3750.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  1869.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.2 ns
+  Min:     83.0 ns
+  Max:     14625.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  6830.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    183.3 ns
+  Min:     83.0 ns
+  Max:     12500.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  4287.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    176.2 ns
+  Min:     83.0 ns
+  Max:     12250.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  7282.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.0 ns
+  Min:     83.0 ns
+  Max:     15250.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3823.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    192.5 ns
+  Min:     83.0 ns
+  Max:     11958.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   749.4 ns
+  p99.99:  8708.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.9 ns
+  Min:     83.0 ns
+  Max:     25708.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     415.3 ns
+  p99.9:   499.9 ns
+  p99.99:  4874.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    176.3 ns
+  Min:     83.0 ns
+  Max:     17250.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   583.8 ns
+  p99.99:  11102.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    183.4 ns
+  Min:     83.0 ns
+  Max:     11791.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   624.6 ns
+  p99.99:  3954.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    170.7 ns
+  Min:     83.0 ns
+  Max:     5167.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3659.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    172.3 ns
+  Min:     83.0 ns
+  Max:     3917.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3622.2 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.6 ns
+  Min:     83.0 ns
+  Max:     25167.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  3696.3 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.7 ns
+  Min:     83.0 ns
+  Max:     11667.0 ns
+  p50:     165.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   624.6 ns
+  p99.99:  8447.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    174.6 ns
+  Min:     83.0 ns
+  Max:     19750.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  3537.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.8 ns
+  Min:     83.0 ns
+  Max:     13583.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  11797.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    192.2 ns
+  Min:     83.0 ns
+  Max:     34334.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   624.6 ns
+  p99.99:  17986.4 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.2 ns
+  Min:     83.0 ns
+  Max:     18541.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3659.1 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    177.6 ns
+  Min:     83.0 ns
+  Max:     12583.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  9832.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    187.5 ns
+  Min:     83.0 ns
+  Max:     7291.0 ns
+  p50:     167.0 ns
+  p90:     291.4 ns
+  p99:     457.9 ns
+  p99.9:   707.6 ns
+  p99.99:  3284.6 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.8 ns
+  Min:     83.0 ns
+  Max:     22792.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  8222.8 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.8 ns
+  Min:     83.0 ns
+  Max:     19333.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  4360.7 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.1 ns
+  Min:     83.0 ns
+  Max:     3583.0 ns
+  p50:     165.9 ns
+  p90:     291.4 ns
+  p99:     416.7 ns
+  p99.9:   499.9 ns
+  p99.99:  2205.9 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    173.4 ns
+  Min:     83.0 ns
+  Max:     12042.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   540.3 ns
+  p99.99:  3914.5 ns
+
+
+=== Latency Histogram (per-order) ===
+  Count:   10000
+  Mean:    175.7 ns
+  Min:     83.0 ns
+  Max:     17042.0 ns
+  p50:     124.9 ns
+  p90:     290.4 ns
+  p99:     416.7 ns
+  p99.9:   581.9 ns
+  p99.99:  3784.6 ns
+
+BM_MatchingEngine_LatencyHistogram     5084561 ns      5082684 ns          136
+BM_NaiveVsOptimized                     119417 ns       119402 ns         5867 items_per_second=8.37504M/s
