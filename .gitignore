@@ -1,0 +1,14 @@
+build/
+bin/
+lib/
+*.o
+*.a
+*.so
+*.dylib
+*.log
+compile_commands.json
+.cache/
+.vscode/
+.idea/
+.kiro/
+.DS_Store
